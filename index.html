@@ -570,7 +570,29 @@ function SlideSummary() {
         This briefing covers what the team has built so far, what's being built next,
         and two specific asks that unblock the launch.
       </p>
-      <div style={{ height: 44 }} />
+      <div style={{ height: 26 }} />
+      <div className="a-up d3" style={{
+        display: "inline-flex", alignItems: "center", gap: 16, flexWrap: "wrap",
+        padding: "14px 20px", borderRadius: 12,
+        background: "var(--ink)", color: "var(--paper)",
+        maxWidth: 820,
+      }}>
+        <span style={{
+          fontFamily: "JetBrains Mono, monospace",
+          fontSize: "0.7rem", letterSpacing: "0.18em", textTransform: "uppercase",
+          padding: "4px 10px", borderRadius: 6,
+          background: "var(--gold)", color: "var(--ink)", fontWeight: 600,
+          flexShrink: 0,
+        }}>One Brand</span>
+        <span style={{ fontSize: "0.96rem", lineHeight: 1.5 }}>
+          Retail and E-Commerce go to market under the same name —{" "}
+          <span style={{
+            fontFamily: "Archivo Black, sans-serif",
+            letterSpacing: "0.04em", color: "var(--paper)",
+          }}>KORIQO</span>. Two channels, one brand, one story.
+        </span>
+      </div>
+      <div style={{ height: 36 }} />
       <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 28, rowGap: 36 }}>
         {stats.map((s, i) => (
           <div key={i} className={`stat a-up d${i + 3}`}>
